@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.column {
+  width: 50%;
+}
+
+.slide {
+  height: 100vh;
+}
+
+.left-column,
+.right-column,
+.container {
+  will-change: transform;
+}

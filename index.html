@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GSAP Snap Example</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="intro">
+      <h1>Page content before the section</h1>
+    </div>
+
+    <div class="container">
+      <!-- Left column: slides in normal order -->
+      <div class="column left-column" id="leftColumn">
+        <div class="slide" style="background: #ff9999">
+          <div
+            style="display: flex; flex-direction: column; align-items: center"
+          >
+            <h1>Left Slide 1</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              ultricies, nunc nec vehicula ultricies, nunc nec vehicula
+              ultricies, nunc nec vehicula
+            </p>
+          </div>
+        </div>
+        <div class="slide" style="background: #ffb3b3">Left Slide 2</div>
+        <div class="slide" style="background: #ffcccc">Left Slide 3</div>
+        <div class="slide" style="background: #ffe6e6">Left Slide 4</div>
+      </div>
+      <!-- Right column: slides reversed so they “scroll down” -->
+      <div class="column right-column" id="rightColumn">
+        <div class="slide" style="background: #9999ff">Right Slide 1</div>
+        <div class="slide" style="background: #b3b3ff">Right Slide 2</div>
+        <div class="slide" style="background: #ccccff">Right Slide 3</div>
+        <div class="slide" style="background: #e6e6ff">Right Slide 4</div>
+      </div>
+    </div>
+
+    <div class="outro">
+      <h1>Page content after the section</h1>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollToPlugin.min.js"></script>
+
+    <!-- Your custom script -->
+    <script src="script.js"></script>
+  </body>
+</html>
